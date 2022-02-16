@@ -1,0 +1,19 @@
+footer {
+    width: 100%;
+    height: 10rem;
+    background: black;
+}
+
+#footer-content {
+    height: calc(100% - calc(var(--margin-sm)*2));
+    width: calc(100% - calc(var(--margin-md)*2));
+    margin: 0 var(--margin-md) 0 var(--margin-md);
+    padding: none;
+    border: none;
+    border-top: white;
+    border-top-style: solid;
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-radius: 0;
+}
