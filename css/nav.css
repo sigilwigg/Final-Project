@@ -1,0 +1,54 @@
+nav {
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    height: 3rem;
+    width: calc(100% - calc(var(--margin-md)*2));
+    margin: 0 var(--margin-md) 0 var(--margin-md);
+    justify-content: space-between;
+    border: none;
+    border-bottom: var(--color-1);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-radius: 0;
+}
+
+nav ul {
+    height: calc(100% - calc(var(--margin-sm)));
+    margin: var(--margin-sm) 0 0 0;
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+    margin-right: var(--margin-md);
+    color: var(--color-text);
+    border: none;
+    border-bottom: rgba(0,0,0,0);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-radius: 0;
+    transition: 400ms ease-in-out;
+}
+
+    nav li:hover {
+        border: none;
+        border-bottom: red;
+        border-bottom-style: solid;
+        border-width: thin;
+        border-radius: 0;
+    }
+
+nav a {
+    font-weight: 1;
+}
+
+#logo-container, #book-now {
+    width: 10rem;
+    height: calc(100% - calc(var(--margin-sm)));
+    margin: var(--margin-sm) 0 0 0;
+}
+
+#logo-container li {
+    width: 100%;
+}
