@@ -1,14 +1,36 @@
 footer {
     width: 100%;
-    height: 10rem;
+    height: 30vh;
     background: black;
+    color: white;
 }
 
+footer h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#site-map, #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 100%;
+}
+
+
+/* ========== FOOTER SITE MAP ========== */
 #footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: calc(100% - calc(var(--margin-sm)*2));
-    width: calc(100% - calc(var(--margin-md)*2));
-    margin: 0 var(--margin-md) 0 var(--margin-md);
+    width: calc(100% - calc(var(--margin-lg)*2));
+    margin: 0 var(--margin-lg) 0 var(--margin-lg);
     padding: none;
+}
+
+#site-map {
+    padding-left: var(--margin-sm);
     border: none;
     border-top: white;
     border-top-style: solid;
@@ -16,4 +38,48 @@ footer {
     border-bottom-style: solid;
     border-width: thin;
     border-radius: 0;
+}
+
+    #site-map :nth-child(2) {
+        margin-top: var(--margin-sm);
+    }
+
+    #site-map :nth-child(5) {
+        margin-bottom: var(--margin-sm);
+    }
+
+
+/* ========== FOOTER CONTACT FORM ========== */
+#contact-form {
+    padding: 0 var(--margin-sm) 0 var(--margin-sm);
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 0;
+}
+
+#contact-form label {
+    margin-bottom: var(--margin-sm);
+}
+
+.name-num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name, .num {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.form-body input {
+    height: 100%;
 }

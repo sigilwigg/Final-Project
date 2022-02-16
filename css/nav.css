@@ -18,7 +18,7 @@ nav ul {
     margin: var(--margin-sm) 0 0 0;
 }
 
-nav li {
+nav li, nav .home-link {
     display: inline-block;
     height: 100%;
     margin-right: var(--margin-md);
@@ -29,6 +29,7 @@ nav li {
     border-width: thin;
     border-radius: 0;
     transition: 400ms ease-in-out;
+    font-size: 1.25rem;
 }
 
     nav li:hover {
@@ -41,14 +42,24 @@ nav li {
 
 nav a {
     font-weight: 1;
+    font-family: 'Gideon Roman', cursive;
 }
 
 #logo-container, #book-now {
-    width: 10rem;
+    width: 15rem;
     height: calc(100% - calc(var(--margin-sm)));
     margin: var(--margin-sm) 0 0 0;
 }
 
 #logo-container li {
     width: 100%;
+}
+
+#book-now {
+    text-align: right;
+}
+
+#book-now .nav-link {
+    margin: 0;
+
 }
