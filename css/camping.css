@@ -10,6 +10,14 @@
     background: linear-gradient(180deg, black 8%, rgba(48,48,48,0) 70%);
 }
 
+#camping .content-container:nth-child(1) {
+    padding-top: 8rem;
+}
+
+#camping .title-card {
+    padding-top: 6rem;
+}
+
 #camping .title-card h1 {
     font-size: 3rem;
     margin-bottom: var(--margin-md);
