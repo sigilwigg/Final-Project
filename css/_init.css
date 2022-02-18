@@ -8,7 +8,11 @@
     /* ----- margins/padding ----- */
     --margin-sm: 1rem;
     --margin-md: 4rem;
-    --margin-lg: 18rem;
+    --margin-lg: 10rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,9 +22,10 @@ body {
     margin: 0;
     height: fit-content;
     width: 100%;
-    background: var(--color-1);
+    background: black;
     overflow-x: hidden;
 }
+
 
 /* ========== GENERIC ELEMENTS ========== */
 ul, li {
@@ -36,10 +41,16 @@ p, h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: .15rem;
     font-family: 'Gideon Roman', cursive;
+    color: var(--color-text);
 }
 
 p, a {
     font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--color-text);
 }
 
 a {

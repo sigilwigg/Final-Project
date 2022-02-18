@@ -11,6 +11,10 @@
     <!-- #region stylesheets -->
     <link rel="stylesheet" href="css/_init.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/car-rentals.css">
+    <link rel="stylesheet" href="css/camping.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- #endregion -->
@@ -26,31 +30,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
     <!-- #endregion -->
 
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/290987f134.js" crossorigin="anonymous"></script>
+
     <title>Old Goat Rentals</title>
 </head>
 
 <body>
     <!-- #region navbar -->
-    <nav>
-        <div id="logo-container">
-            <a class="home-link" href="#">Old Goat Rentals</a>
-        </div>
-        <ul>
-
-            <li class="nav-link">
-                <a href="#">Car Rentals</a>
-            </li>
-            <li class="nav-link">
-                <a href="#">Car Camping</a>
-            </li>
-            <li class="nav-link">
-                <a href="#">About</a>
-            </li>
-        </ul>
-        <div id="book-now">
-            <li class="nav-link">
-                <a href="#">Book Now!</a>
-            </li>
+    <nav id="navbar">
+        <div id="inner-nav">
+            <div id="logo-container">
+                <a class="home-link" href="#">Old Goat Rentals</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#cars">Car Rentals</a>
+                </li>
+                <li>
+                    <a href="#camping">Car Camping</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div id="book-now">
+                <li>
+                    <a href="#">Book Now!</a>
+                </li>
+            </div>
         </div>
     </nav>
     <!-- #endregion -->
@@ -59,17 +70,96 @@
     <section id="landing">
         <div class="content-container">
             <div class="title-card">
-                <h1 class="title">Explore Maui</h1>
-                <p>With the O.G. Rental Company</p>
+                <div class="inner-box">
+                    <h1 class="title">Explore Maui</h1>
+                    <p>With the O.G. Rental Company</p>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-card">
+                    <p>Book used cars at affordable prices for your stay</p>
+                    <p>Learn More &#8658;</p>
+                </div>
+                <div class="info-card">
+                    <p>Rent a car-top tent and camp all over Maui </p>
+                    <p>Learn More &#8658;</p>
+                </div>
+                <div class="info-card">
+                    <p>Have it ready to go at the airport when you arrive</p>
+                    <p>Learn More &#8658;</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- car rentals -->
     <section id="cars">
+        <div class="title-card">
+            <h2 class="title">Local Cars,</h2>
+            <h2 class="title">Local Flavor</h2>
+            <p>Enjoy the best in used vehicle rentals. We have a few different options to suit
+                your style. Our
+                fleet currently consists of Honda CRV's and Ford Rangers.</p>
+        </div>
+
+        <div class="card-row">
+            <div class="img-card car-1">
+            </div>
+            <div class="img-card car-2">
+            </div>
+            <div class="img-card car-3">
+            </div>
+        </div>
+
+        <button class="cta-btn">Book Now!</button>
     </section>
+
+    <!-- car camping -->
+    <section id="camping">
+        <div class="content-container">
+            <div class="title-card">
+                <div class="inner-box">
+                    <h1>Car Camping, What's that?</h1>
+                    <p>Behold! The Venture Forward Tent: the perfect portable tent!</p>
+                    <p>All of our vehicles can be rented with this optional tent along with a full set of gear for
+                        everthing you need to go camping!</p>
+                </div>
+            </div>
+            <div class="video-container">
+                <iframe width="90%" height="500" src="https://www.youtube.com/embed/1m5BtIjJxY4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <div id="map">
+            <div class="content-container">
+                <p>There are 8 sanctioned campsites on Maui for you to tack your car-camping experience to! Check
+                    them out below</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238701.05562642377!2d-156.47806694664908!3d20.803259854642576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79552b4acc4c61dd%3A0xcc43e741dc113e7f!2sMaui!5e0!3m2!1sen!2sus!4v1645148265018!5m2!1sen!2sus"
+                    width="400" height="325" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <img src="./images/logo.png" alt="">
+        <p>Old Goat Renals is a locally run, family-owned used-car rental company. Our practical use of older cars is
+            both environmentlaly friendly and brings out a little natural charm!</p>
+    </section>
+
+
     <!-- #endregion -->
 
-    <footer>
+    <footer id="contact">
+        <div id="social-media-row">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square fa-4x"></i></a>
+            <h2>Follow Us!</h2>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram-square fa-4x"></i></a>
+        </div>
         <div id="footer-content">
             <div id="site-map">
                 <h3>Old Goat Rentals</h3>
@@ -99,5 +189,9 @@
         </div>
     </footer>
 </body>
+
+<!-- #region scripts -->
+<script src="./js/nav-scroll.js"></script>
+<!-- #endregion -->
 
 </html>

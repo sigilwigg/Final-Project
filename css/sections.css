@@ -1,4 +1,5 @@
-#landing, #cars {
+/* ========== SECTIONS ========== */
+section {
     z-index: 0;
     position: relative;
     width: 100%;
@@ -6,45 +7,67 @@
 }
 
 .content-container {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     padding: var(--margin-md);
     box-sizing: border-box;
 }
 
-
-/* ========== LANDING ========== */
-#landing {
-    background-image: url('../images/ocean.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* ========== TITLE CARDS ========== */
+section .title-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-#landing .content-container {
-    background: linear-gradient(0deg, black 6%, rgba(48,48,48,0) 70%);
-}
-
-#landing .title-card {
+.title-card .inner-box {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 50%;
-    height: fit-content ;
 }
 
-#landing .title {
+.title-card h1 {
     font-size: 5rem;
     color: var(--color-text);
     letter-spacing: 1rem;
 }
-#landing p {
-    font-size: 1.5rem;
+
+.title-card h2 {
+    font-size: 3rem;
     color: var(--color-text);
+    letter-spacing: 1rem;
+}
+
+.title-card p {
+    margin-top: var(--margin-sm);
 }
 
 
-/* ========== CARS ========== */
-#cars {
-    background: black;
+/* ========== MISC ========== */
+.pad-right {
+    padding-right: var(--margin-md);
 }
+
+.cta-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: var(--margin-md) 0;
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--color-text);
+    font-family: 'Gideon Roman', cursive;
+    border: none;
+    background: rgba(0,0,0,0);
+    border-bottom: var(--color-1);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-radius: 0;
+    transition: 400ms ease-in-out;
+}
+
+    .cta-btn:hover {
+        cursor: pointer;
+    }

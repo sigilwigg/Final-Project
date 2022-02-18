@@ -1,0 +1,56 @@
+#camping {
+    height: fit-content;
+    background-image: url('../images/bamboo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#camping .content-container {
+    background: linear-gradient(180deg, black 8%, rgba(48,48,48,0) 70%);
+}
+
+#camping .title-card h1 {
+    font-size: 3rem;
+    margin-bottom: var(--margin-md);
+}
+
+#camping .title-card p {
+    margin-bottom: var(--margin-sm);
+}
+
+#camping .inner-box {
+    position: relative;
+    top: 0;
+    transform: none;
+}
+
+#camping .video-container {
+    width: 100%;
+    text-align: right;
+}
+
+.video-container iframe {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title-card iframe {
+    margin-left: 30% ;
+}
+
+/* ========== MAP ========== */
+#map {
+    background: rgba(0,0,0,0);
+}
+
+#map .content-container {
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, black 6%, rgba(48,48,48,0) 70%);
+}
+
+#map p {
+    margin-bottom: var(--margin-md);
+}

@@ -1,0 +1,13 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about img {
+    width: 40%;
+}
+
+#about p {
+    margin: 0 25% 0 25%;
+}

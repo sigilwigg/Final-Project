@@ -1,8 +1,18 @@
 nav {
     z-index: 99;
     position: fixed;
-    display: flex;
     height: 3rem;
+    width: 100%;
+    justify-content: space-between;
+    background: rgba(0,0,0,0);
+    transition: 400ms ease-in-out;
+}
+
+#inner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
     width: calc(100% - calc(var(--margin-md)*2));
     margin: 0 var(--margin-md) 0 var(--margin-md);
     justify-content: space-between;
@@ -14,6 +24,7 @@ nav {
 }
 
 nav ul {
+    position: relative;
     height: calc(100% - calc(var(--margin-sm)));
     margin: var(--margin-sm) 0 0 0;
 }
@@ -32,6 +43,11 @@ nav li, nav .home-link {
     font-size: 1.25rem;
 }
 
+nav Li {
+    position: relative;
+    top: 0;
+}
+
     nav li:hover {
         border: none;
         border-bottom: red;
@@ -44,6 +60,7 @@ nav a {
     font-weight: 1;
     font-family: 'Gideon Roman', cursive;
 }
+
 
 #logo-container, #book-now {
     width: 15rem;
@@ -59,7 +76,7 @@ nav a {
     text-align: right;
 }
 
-#book-now .nav-link {
+#book-now li {
     margin: 0;
 
 }
